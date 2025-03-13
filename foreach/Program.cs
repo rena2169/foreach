@@ -67,10 +67,8 @@ namespace @foreach
 
 
             //Console.Write("Введите строку: ");
-            ////ввод строки через консоль
-            //string inputSentence = Console.ReadLine();
-            //// счетчик слов
-            //int counterWords = 0;
+            //string inputSentence = Console.ReadLine(); //ввод строки через консоль        
+            //int counterWords = 0; // счетчик слов
 
             //// проверка на пустоту или null значение
             //if (string.IsNullOrEmpty(inputSentence))
@@ -80,15 +78,13 @@ namespace @foreach
             //else
             //{
             //    // Удаляем все знаки препинания, заменяя их на пробел.
-            //    string cleanedSentence = Regex.Replace(inputSentence, @"[^\w\s]+", " ").Trim();
-            //    // разделение слов через пробел
-            //    string[] inputWords = cleanedSentence.Split(new[] { ' ' });
+            //    string cleanedSentence = Regex.Replace(inputSentence, @"[^\w\s]+", " ");
+            //    cleanedSentence = cleanedSentence.Trim();
 
-            //    // перебор слов
-            //    foreach (var word in inputWords)
-            //    {
-            //        counterWords++;
-            //    }
+            //    char[] anySpaceCharacter = new char[0];
+            //    string[] inputWords = cleanedSentence.Split(anySpaceCharacter, StringSplitOptions.RemoveEmptyEntries); 
+
+            //    counterWords = inputWords.Length; // Подсчет слов
 
             //    Console.WriteLine(counterWords);
             //}
@@ -341,7 +337,7 @@ namespace @foreach
 
         //    if (!string.IsNullOrWhiteSpace(inputLine))  // Проверка на пустой ввод
         //    {
-        //        string[] inputSentences = inputLine.Split(new[] {'.', '!', '?'});
+        //        string[] inputSentences = inputLine.Split(new[] { '.', '!', '?' });
 
         //        foreach (string sentence in inputSentences)
         //        {
